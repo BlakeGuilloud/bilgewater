@@ -1,14 +1,14 @@
-const autoprefixer  = require('autoprefixer');
-const cssnano       = require('cssnano');
-const ghPages       = require('gulp-gh-pages');
-const gulp          = require('gulp');
-const gutil         = require('gutil');
-const less          = require('gulp-less');
-const postcss       = require('gulp-postcss');
-const serve         = require('gulp-serve');
-const webpack       = require('webpack');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const ghPages = require('gulp-gh-pages');
+const gulp = require('gulp');
+const gutil = require('gutil');
+const less = require('gulp-less');
+const postcss = require('gulp-postcss');
+const serve = require('gulp-serve');
+const webpack = require('webpack');
 
-const paths         = require('./paths');
+const paths = require('./paths');
 const webpackConfig = require('./webpack.config');
 
 gulp.task('pages', () => gulp.src('./public/**/*').pipe(ghPages()));
